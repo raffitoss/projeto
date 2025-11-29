@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconecte-se: Vícios Contemporâneos</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configurações Globais */
+        :root {
+            --primary-color: #000000; /* Preto principal */
+            --secondary-color: #FFFFFF; /* Branco principal */
+            --accent-color: #F8F8F8; /* Branco levemente cinza para contraste */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Tipografia */
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            border-bottom: 1px solid var(--accent-color);
+            padding: 40px 0;
+        }
+
+        /* Seção Sobre Nós */
+        .about-us {
+            background-color: var(--primary-color);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .about-us h2 strong {
+            font-weight: 700;
+            color: var(--secondary-color); 
+        }
+
+        .about-us p {
+            font-size: 1.1em;
+            max-width: 900px;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .about-us p strong {
+            font-weight: 700;
+        }
+
+
+        /* Seção Revistas */
+        .magazines {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 60px 0 80px;
+            border-top: 1px solid var(--secondary-color);
+        }
+
+        .magazines h2 {
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .magazine-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .magazine-item {
+            background-color: var(--secondary-color);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--primary-color);
+        }
+
+        .magazine-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .magazine-item p {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        /* Botão */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            border-top: 1px solid var(--accent-color);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+                letter-spacing: 3px;
+            }
+
+            .about-us h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>DESCONECTE-SE</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <h2>A Luz do Conhecimento contra a Prisão do Vício.</h2>
+                <p>
+                    O Desconecte-se é um projeto nascido da urgência de conscientizar sobre os vícios contemporâneos. Aqueles que, disfarçados de modernidade e prazer, silenciosamente aprisionam. Através da leitura, oferecemos uma lente de aumento para a realidade, transformando a informação na ferramenta mais poderosa para recuperar o controle, promover a saúde mental e escolher a liberdade no dia a dia.
+                </p>
+            </div>
+        </section>
+
+        <section class="magazines">
+            <div class="container">
+                <h2>Nossas Publicações</h2>
+                
+                <div class="magazine-list">
+                    
+                    <div class="magazine-item">
+                        <h3>Álcool: Um Perigo Invisível</h3>
+                        <p>Os impactos sociais e físicos da substância mais aceita e mais perigosa.</p>
+                        <a href="alcool.pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+                    
+                    <div class="magazine-item">
+                        <h3>Drogas Ilícitas: O Vício</h3>
+                        <p>Uma análise detalhada sobre as substâncias ilícitas e o ciclo da dependência.</p>
+                        <a href="drogas.pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+                    
+                    <div class="magazine-item">
+                        <h3>Nicotina: A Droga Invisível</h3>
+                        <p>Foco no crescimento do consumo de nicotina, especialmente em dispositivos eletrônicos.</p>
+                        <a href="Revista - Desconecte-se (nicotina).pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+                    
+                    <div class="magazine-item">
+                        <h3>Os Perigos do Vício em Apostas</h3>
+                        <p>Apostar pode ser um jogo, mas o vício é real. Consequências financeiras e psicológicas.</p>
+                        <a href="vício em apostas.pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+
+                    <div class="magazine-item">
+                        <h3>Nomofobia: Vício em Celular e Redes</h3>
+                        <p>O medo de ficar sem o celular e como as redes sociais e jogos aprisionam a mente.</p>
+                        <a href="Vicio na rede social Nomofobia.pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+
+                    <div class="magazine-item">
+                        <h3>Vícios do Presente (Sumário Geral)</h3>
+                        <p>Visão geral sobre vícios de comportamento, desde pornografia até games e redes sociais.</p>
+                        <a href="Revista - Desconecte-se.pdf.pdf" target="_blank" class="btn">Ler Revista</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Projeto Desconecte-se. Conscientização e Liberdade.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
